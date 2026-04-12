@@ -15,7 +15,7 @@
 #ifdef ARDUINO_TEENSY40
 // #define T4 1
 	#define BOARDTYPE TEENSY4
-#elif ARDUINO_TEENSY32
+#elif defined(ARDUINO_TEENSY32) || defined(ARDUINO_TEENSY31)
 	#define BOARDTYPE TEENSY32
 #else
 // #define T4 0
