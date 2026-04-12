@@ -117,7 +117,7 @@ Button encButton(buttonPin);
 	// Landing Page: scheme (0: http, 1: https), url
 	// Page source can be found at https://github.com/hathach/tinyusb-webusb-page/tree/main/webusb-rgb
 	Adafruit_USBD_WebUSB usb_web;
-	WEBUSB_URL_DEF(landingPage, 1 /*https*/, "denki-oto-to-go-go.surge.sh/#/");
+	WEBUSB_URL_DEF(landingPage, 1 /*https*/, "okyeron.github.io/web-editor/index.html");
 
 #endif
 
@@ -625,7 +625,7 @@ void saveToStorage(void)
 // currently loads everything ( mode + patterns )
 bool loadFromStorage(void)
 {
-	// This load can happen soon after Serial.begin 
+	// This load can happen soon after Serial.begin
 	// - enable this 'wait for Serial' if you need to Serial.print during loading
 	// while( !Serial );
 
